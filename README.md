@@ -6,3 +6,5 @@ Team Members:
   3. Sahar Barekati 114436
 
 Exercise session 1
+
+We worked on PlantUML.com to formulate a Conceptual model. 
