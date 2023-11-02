@@ -1,0 +1,46 @@
+@startuml
+Class Cafeteria {
+
+name,
+menu
+}
+
+Class Item {
+
+name, 
+price, 
+expiration Date 
+
+}
+
+Class Coffe{
+
+espresso, 
+latte, 
+americano
+}
+
+Class Tea{
+
+black tea, 
+green tea 
+}
+
+Class Cake {
+
+Red velvet, 
+tirimassu 
+}
+
+Class Beans{
+
+kind, 
+level 
+}
+
+Cafeteria "1" -right->"1..*" Item: Provides
+Coffe -up-> Item
+Tea -up-> Item
+Cake -up-> Item
+Coffe -down-> Beans
+@enduml
