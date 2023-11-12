@@ -1,27 +1,6 @@
-{
-"@context":"http://www.w3.org/ns/csvw"
-"url":"bean.csv",
-"tableSchema": {
-  "columns": [{
-  {
-    "titles":"id",
-    "dc:description":"the id of each bean is measure for",
-    "datatype": "string"
-    "required": true
-    
-  },
-  {
-    "titles":"kind",
-    "dc:description":"kind of each bean is of",
-    "datatype": "string"
-    "required": true
-  },
-  {
-    "titles":"level",
-    "dc:description":"level is for the level of kind",
-    "datatype": "nonNegativeInteger"
-    "required": true
-  },
- 
-}],
-"primarykey":["id","level"]
+id ,kind,level
+1,Arabica,4.5
+2,robosta,3
+3,Arabica beans vs Robusta beans,5
+4,Liberica,2
+`,,
