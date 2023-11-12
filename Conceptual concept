@@ -9,29 +9,26 @@ Class Item {
 
 name, 
 price, 
-expiration Date 
+kind
 
 }
 
 Class Coffe{
 
-espresso, 
-latte, 
-americano
 }
 
 Class Tea{
 
-black tea, 
-green tea 
 }
 
 Class Cake {
 
-Red velvet, 
-tirimassu 
 }
 
+
+Class Ingredient{
+sugar
+}
 Class Beans{
 
 kind, 
@@ -39,8 +36,9 @@ level
 }
 
 Cafeteria "1" -right->"1..*" Item: Provides
-Coffe -up-> Item
-Tea -up-> Item
-Cake -up-> Item
+Coffe -up-|> Item
+Tea -up-|> Item
+Cake -up-|> Item
 Coffe -down-> Beans
+Cake -down-> Ingredient
 @enduml
