@@ -1,0 +1,21 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "url": "Sugar.csv",
+    "tableSchema": {
+        "columns": [{
+            "name": "id",
+            "titles": "id",
+            "dc:description": "The id of each item is measured for.",
+            "datatype": "string",
+            "required": true
+        },{
+            "name": "sugar",
+            "titles": "sugar",
+            "dc:description": "The level of Sugar of the products.",
+            "datatype": "string",
+            "required": true
+        }
+
+        }],
+        "primaryKey": ["id"]
+    }
