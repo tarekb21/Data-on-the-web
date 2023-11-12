@@ -17,7 +17,7 @@
         },{
             "titles": "level",
             "dc:description": "The level of the products.",
-            "datatype": "integer",
+            "datatype": "nonNegativeInteger",
             "required": true
         }
 
