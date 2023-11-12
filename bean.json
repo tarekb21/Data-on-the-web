@@ -1,0 +1,26 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "url": "bean.csv",
+    "tableSchema": {
+        "columns": [{
+            "name": "id",
+            "titles": "id",
+            "dc:description": "The id of each item is measured for.",
+            "datatype": "string",
+            "required": true
+        },{
+            "name": "kind",
+            "titles": "kind",
+            "dc:description": "The kind of the products.",
+            "datatype": "string",
+            "required": true
+        },{
+            "titles": "level",
+            "dc:description": "The level of the products.",
+            "datatype": "integer",
+            "required": true
+        }
+
+        ],
+        "primaryKey": ["id", "price"]
+    }
