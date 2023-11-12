@@ -1,0 +1,32 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "url": "Item.csv",
+    "tableSchema": {
+        "columns": [{
+            "name": "id",
+            "titles": "id",
+            "dc:description": "The id of each item is measured for.",
+            "datatype": "string",
+            "required": true
+        },{
+            "name": "name",
+            "titles": "name",
+            "dc:description": "The name of the products.",
+            "datatype": "string",
+            "required": true
+        },{
+            "titles": "price",
+            "dc:description": "The price of the products.",
+            "datatype": "integer",
+            "required": true
+        }, {
+            "name": "kind",
+            "titles": "kind",
+            "dc:description": "The kinds of the products.",
+            "datatype": "string",
+            "required": true  
+        }
+
+        }],
+        "primaryKey": ["id", "price"]
+    }
