@@ -1,15 +1,15 @@
 @startuml
 Class Cafeteria {
 
-name,
-menu
+name
+
 }
 
 Class Item {
 
 name, 
-price, 
-kind
+price
+
 
 }
 
@@ -27,6 +27,8 @@ Class Cake {
 
 
 Class Ingredient{
+
+name
 sugar
 }
 Class Beans{
