@@ -1,0 +1,91 @@
+[
+    {
+    "name" : "Sahar",
+    "menu" : 
+        [
+            {
+                "id" : "1",
+                "name" : "Americano",
+                "price" : 2.5,
+                "Kind" : "coffee",
+                "Beans":
+                
+                    {
+                        "kind" : "Arabica",
+                        "level" : 4.5
+                    }
+                   
+                
+            },
+            {
+                "id" : "2",
+                "name" : "Tiramissou",
+                "price" : 1.25,
+                "Kind" : "cake",
+                "Ingredients":
+                [
+                    {
+                        "name": "biscuits",
+                        "Sugar": "high"
+                    },
+                    {
+                        "name": "Chocolate",
+                        "Sugar": "high"
+                    }
+                    
+                ]
+
+            },
+            {
+                "id" : "3",
+                "name" : "Black tea",
+                "price" : 1.00,
+                "Kind" : "Tea"
+
+            }
+
+        ] 
+
+    
+    },
+    {
+        "name" : "Ziad",
+        "menu" : 
+            [
+                {
+                    "id" : "4",
+                    "name" : "Latte",
+                    "price" : 3.5,
+                    "Kind" : 
+                    [
+                    "name": "coffe",
+                    "kind" : "Liberica",
+                    "level" : 2
+                ]
+                },
+                {
+                    "id" : "5",
+                    "name" : "Red Velvet",
+                    "price" : 2.00,
+                    "Kind" : 
+                    [
+                    "name": "Cake",
+                    "Sugar": "meduim"
+                ]
+    
+                },
+                {
+                    "id" : "6",
+                    "name" : "Green tea",
+                    "price" : 2.00,
+                    "Kind" : "Tea"
+    
+                }
+    
+            ] 
+    
+        
+        }
+    
+
+]
