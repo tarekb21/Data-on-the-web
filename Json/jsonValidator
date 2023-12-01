@@ -1,0 +1,52 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "http://www.google.com",
+    "title": "Cafeteria",
+     "description": "A cafeteria that has a list of items with their sub-types",
+     "type": "array",
+     "items": {
+     	"type":"object",
+        "properties": {
+          "name": {
+          	"type": "string", 
+          },
+            "menu": {
+          	"type": "array", 
+              "items": {
+              "type":"object",
+              "properties": {
+      		"id": {
+            	"type": "string",
+            },
+            "name": {
+            	"type": "string",
+            },
+      		"price": {
+            	"type": "number",
+            },
+              "kind": {
+            	"type": "string",
+            },
+            "Ingredient": {
+            	"type": "array",
+                "items": {
+                "type": "object",
+                 "properties": {
+                   "name":{
+                     "type":"string"
+                   },
+                   "sugar":{
+                     "type":"string"
+                   },
+                 }
+                }
+            
+            }
+          }
+            }
+     }
+      
+      }
+    
+}
+}
