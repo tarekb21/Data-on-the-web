@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix exv: <https://MyCafeteria.de/course-data-on-the-web/vocabulary/Cafeteria/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+
+exv:Cafeteria a rdfs:Class ;
+    rdfs:subclassof schema:CafeOrCoffeeShop; 
+    rdfs:label "Cafeteria"@en .
+
+exv:Item a rdfs:Class ;
+    rdfs:label "Item"@en .
+
+exv:Coffee a rdfs:Class ;
+    rdfs:subClassOf exv:Item ;
+    rdfs:label "Coffee Items"@en .
+
+exv:Tea a rdfs:Class ;
+    rdfs:subClassOf exv:Item ;
+    rdfs:label "Tea Items"@en .
+
+exv:Cake a rdfs:Class ;
+    rdfs:subClassOf exv:Item ;
+    rdfs:label "Cake Items"@en .
+
+exv:Beans a rdfs:Class ;
+    rdfs:subClassOf exv:Ingredient ;
+    rdfs:label "Beans"@en .
+
+exv:Ingredient a rdfs:Class ;
+    rdfs:label "Ingredient"@en .
+
+exv:cafeteriaName a rdf:Property ;
+    rdfs:label "name"@en ;
+    rdfs:domain exv:Cafeteria ;
+    rdfs:range xsd:string .
+
+exv:itemName a rdf:Property ;
+    rdfs:label "name"@en ;
+    rdfs:domain exv:Item ;
+    rdfs:range xsd:string .
+
+exv:ingredientName a rdf:Property ;
+    rdfs:label "name"@en ;
+    rdfs:domain exv:Ingredient ;
+    rdfs:range xsd:string .    
+
+
+exv:provides a rdf:Property ;
+    rdfs:label "provides"@en ;
+    rdfs:domain exv:Cafeteria ;
+    rdfs:range exv:Item .
+
+exv:madeOf a rdf:Property ;
+    rdfs:label "is made of"@en; 
+    rdfs:domain exv:Item ;
+    rdfs:range exv:Ingredient .
+
+exv:madeOfBeans a rdf:Property ;
+    rdfs:subPropertyOf exv:madeOf; 
+    rdfs:label "is made of"@en; 
+    rdfs:domain exv:Coffee ;
+    rdfs:range exv:Beans .    
+
+
+
+exv:Price a rdf:Property ;
+    rdfs:label "price of the Item"@en ;
+    rdfs:domain exv:Item ;
+    rdfs:range xsd:decimal .
+
+exv:Kind a rdf:Property ;
+    rdfs:label "Kind of the beans for coffee"@en ;
+    rdfs:domain exv:Beans ;
+    rdfs:range xsd:string .
+
+exv:Level a rdf:Property ;
+    rdfs:label "level of the roasting"@en ;
+    rdfs:domain exv:Beans ;
+    rdfs:range xsd:string .
+
+exv:Sugar a rdf:Property ;
+    rdfs:label "how much sugar does each ingredient have"@en ;
+    rdfs:domain exv:Ingredient ;
+    rdfs:range xsd:string .
